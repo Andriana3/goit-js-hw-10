@@ -67,19 +67,19 @@ breedSelect.addEventListener('change', () => {
 function showLoader() {
   errLoader.classList.remove('hide');
   errLoader.classList.add('show');
-};
+}
 
 function hideLoader() {
   errLoader.classList.remove('show');
   errLoader.classList.add('hide');
-};
+}
 
 function showError() {
   errElement.classList.remove('hide');
   errElement.classList.add('show');
-};
+}
 
 function hideError() {
   errElement.classList.remove('show');
   errElement.classList.add('hide');
-};
+}
