@@ -10,12 +10,17 @@ const catInfo = document.querySelector('.cat-info');
 const breedSelect = document.querySelector('.breed-select');
 errLoader.textContent = '';
 
-
+// errLoader.classList.remove('is-hidden');
+breedSelect.classList.add('is-hidden');
 
 fetchBreeds()
-    .then(breeds => {
-        hideLoader();
-        showCatInfo()
+  .then(breeds => {
+      showLoader()
+        // hideLoader();
+    showCatInfo()
+    errLoader.classList.add('is-hidden');
+    
+
     breedSelect.classList.remove('is-hidden');
         
     breeds.forEach(breed => {
@@ -71,10 +76,12 @@ hideCatInfo()
 function showLoader() {
   errLoader.classList.remove('is-hidden');
   errLoader.textContent = '';
+  breedSelect.classList.add('is-hidden')
 }
 
 function hideLoader() {
   errLoader.classList.add('is-hidden');
+  breedSelect.classList.remove('is-hidden')
 }
 
 function showError() {

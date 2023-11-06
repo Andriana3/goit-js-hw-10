@@ -2,7 +2,9 @@
     display: none;
 }
 
-
+.breed-select.is-hidden{
+    display: none;
+}
 .ss-option {
     background-color: yellow;
 }
