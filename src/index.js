@@ -10,13 +10,15 @@ const catInfo = document.querySelector('.cat-info');
 const breedSelect = document.querySelector('.breed-select');
 errLoader.textContent = '';
 
-// errLoader.classList.remove('is-hidden');
+
+errLoader.classList.remove('is-hidden');
 breedSelect.classList.add('is-hidden');
+
+
 
 fetchBreeds()
   .then(breeds => {
-      showLoader()
-        // hideLoader();
+        hideLoader();
     showCatInfo()
     errLoader.classList.add('is-hidden');
     
