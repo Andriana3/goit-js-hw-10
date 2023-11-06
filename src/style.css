@@ -1,0 +1,25 @@
+.show {
+    display: block;
+}
+
+/* Приховаємо елемент */
+.hide {
+    display: none;
+}
+
+.ss-option{
+    background-color: yellow;
+}
+
+.cat-container{
+    width: 500px;
+}
+
+.error{
+    color: red;
+}
+
+.loader{
+    color: black;
+    background-color: aqua;
+}
