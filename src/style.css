@@ -1,12 +1,7 @@
-
-.show {
-    display: block;
-}
-
-/* Приховаємо елемент */
-.hide {
+.is-hidden{
     display: none;
 }
+
 
 .ss-option {
     background-color: yellow;
@@ -24,6 +19,13 @@
     color: black;
 }
 
+.loader.is-hidden{
+    display: none;
+}
+
+/* .cat-info.is-hidden{
+    display: none;
+} */
 .loader {
     width: 12px;
     height: 12px;
